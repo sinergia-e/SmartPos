@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyBusiness Mobile</string>
+    <string name="title_activity_menu">MenuActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_client">clientActivity</string>
+    <string name="title_activity_connections">ConnectionsActivity</string>
+    <string name="textview">TextView</string>
+
+</resources>

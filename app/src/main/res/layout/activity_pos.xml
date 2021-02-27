@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.PosActivity">
+
+    <LinearLayout
+        android:id="@+id/Layout_Pos_GeneralContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Layout_Pos_Prods"
+            android:layout_width="299dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/ListView_Pos_Prods"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EditText_Pos_FindProd"
+                    android:layout_width="183dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Que buscas?"
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_FindProd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:visibility="visible"
+                    app:srcCompat="@android:drawable/ic_search_category_default" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_BarScanner"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    android:onClick="ScanButton"
+                    app:srcCompat="@mipmap/ic_bar_scan" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_Pos_Lines"
+                    android:layout_width="155dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_FilterLine"
+                    style="@style/Widget.AppCompat.ImageButton"
+                    android:layout_width="7dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    app:srcCompat="@android:drawable/ic_menu_more" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/EditText_Pos_Client"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Selecciona un cliente"
+                    android:inputType="textPersonName" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_FindClient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_ObservSale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/transparente"
+                    android:layout_weight="1"
+                    android:src="@android:drawable/ic_menu_edit" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/ListView_Pos_Parts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView_Pos_Total"
+                    android:layout_width="237dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="TextView"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:textSize="36sp" />
+
+                <ImageButton
+                    android:id="@+id/ImageButton_Pos_CloseSale"
+                    android:layout_width="8dp"
+                    android:layout_height="131dp"
+                    android:layout_weight="1"
+                    android:background="#00ffffff"
+                    app:srcCompat="@mipmap/ic_pos" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

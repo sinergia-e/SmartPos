@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.OrdersListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentEnd="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton_OrdersList_Sync"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                app:srcCompat="@mipmap/ic_sync_orders" />
+
+            <EditText
+                android:id="@+id/eT_OrdersList_FindOrderClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Busca por cliente"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_dark"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/iB_OrdersList_FindOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#737576"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:text="Filtra x estado"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spinner_OrderList_Status"
+                android:layout_width="145dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.70" />
+
+            <ImageButton
+                android:id="@+id/iB_OrdersList_FilterStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lV_OrdersList_List"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+</RelativeLayout>

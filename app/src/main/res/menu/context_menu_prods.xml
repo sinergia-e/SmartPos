@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/OpenDetail"
+        android:title="Revisar detalles"></item>
+
+
+    <item
+        android:title="Actualiza producto"
+        android:id="@+id/Update"></item>
+
+
+    <item
+        android:title="Editar producto"
+        android:id="@+id/EditProd"></item>
+
+
+
+</menu>

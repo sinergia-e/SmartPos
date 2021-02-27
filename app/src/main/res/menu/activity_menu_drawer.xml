@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+
+
+    <item android:title="VENTAS">
+        <menu>
+            <item
+                android:id="@+id/pos"
+                android:icon="@mipmap/ic_pos"
+                android:title="Punto de Venta" />
+
+            <item
+                android:id="@+id/Pos_Reg"
+                android:icon="@mipmap/ic_prods"
+                android:title="Registro de ventas" />
+
+            <item
+                android:id="@+id/clients"
+                android:icon="@mipmap/ic_clients"
+                android:title="Catalogo de clientes" />
+
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="COMPRAS">
+        <menu>
+            <item
+                android:id="@+id/providers"
+                android:icon="@mipmap/ic_users"
+                android:title="Proveedores" />
+
+            <item
+                android:id="@+id/purchase"
+                android:icon="@mipmap/ic_inventary_entry"
+                android:title="Regitra una compra" />
+
+            <item
+                android:id="@+id/purchaseslist"
+                android:icon="@mipmap/ic_orders"
+                android:title="Listado de compras" />
+
+
+        </menu>
+    </item>
+
+
+
+
+
+<!--
+    <item android:title="RESTAURANTE">
+        <menu>
+            <item
+                android:id="@+id/comander"
+                android:icon="@mipmap/ic_rest"
+                android:title="Comanda" />
+
+            <item
+                android:id="@+id/tables"
+                android:icon="@mipmap/ic_tables"
+                android:title="Estado de Mesas" />
+
+        </menu>
+    </item>
+-->
+
+
+
+
+
+    <item android:title="PEDIDOS">
+        <menu>
+            <item
+                android:id="@+id/neworder"
+                android:icon="@mipmap/ic_new_order"
+                android:title="Nuevo pedido" />
+            <item
+                android:id="@+id/orders"
+                android:icon="@mipmap/ic_orders"
+                android:title="Pedidos Previos" />
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="INVENTARIO">
+        <menu>
+
+            <item
+                android:id="@+id/prods"
+                android:icon="@mipmap/ic_prods"
+                android:title="Catalogo de Productos" />
+
+            <item
+                android:id="@+id/Inventory"
+                android:icon="@mipmap/ic_inventary"
+                android:title="Movimientos de inventario" />
+
+
+            <item
+                android:id="@+id/Checker"
+                android:icon="@mipmap/ic_bar_scan"
+                android:title="Verificador de Precios" />
+
+
+        </menu>
+    </item>
+
+    <item android:title="INFORMACION">
+        <menu>
+            <item
+                android:id="@+id/Reports"
+                android:icon="@mipmap/ic_reporticon"
+                android:title="Reportes Productos" />
+
+
+
+        </menu>
+    </item>
+
+
+
+    <item android:title="CONFIGURACION">
+        <menu>
+            <item
+                android:id="@+id/Users"
+                android:icon="@mipmap/ic_users"
+                android:title="Usuarios" />
+            <item
+                android:id="@+id/AppConfig"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Configuracion de App" />
+
+            <item
+                android:id="@+id/Connections"
+                android:icon="@drawable/sql_config"
+                android:title="Sucursales o conexiones" />
+            <item
+                android:id="@+id/DeleteDb"
+                android:icon="@mipmap/ic_danger"
+                android:title="Eliminar base de datos" />
+
+            <item
+                android:id="@+id/AboutUs"
+                android:icon="@mipmap/ic_infoic"
+                android:title="Acerca de la Aplicacion" />
+
+        </menu>
+    </item>
+
+    <item
+        android:title="Cerrar App">
+        <menu>
+            <item
+                android:id="@+id/CloseApp"
+                android:icon="@android:drawable/ic_menu_close_clear_cancel"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+
+
+</menu>

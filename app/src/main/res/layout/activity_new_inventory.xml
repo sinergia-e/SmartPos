@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.NewInventoryMovsActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        android:layout_alignBottom="@+id/floatingActionButton_InventoryParts">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView_NewInventoryMov_Folio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editText_NewInventory_FindProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Busca un producto"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageButton
+                android:id="@+id/imageButton_NewInventory_FindProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.62"
+                android:background="#00ffffff"
+                app:srcCompat="@android:drawable/ic_search_category_default" />
+
+            <ImageButton
+                android:id="@+id/imageButton_ScannerBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00ffffff"
+                android:onClick="ScanButton"
+                android:src="@mipmap/ic_bar_scan" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="clip_horizontal|center_vertical">
+
+            <Spinner
+                android:id="@+id/spinner_newivmov_lines"
+                android:background="@color/cardview_light_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd" />
+
+            <ImageButton
+                android:id="@+id/InventoryFilter"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/transparente"
+                android:src="@android:drawable/ic_menu_sort_by_size" />
+        </LinearLayout>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="vertical"
+            android:layout_weight="0.96">
+
+            <ListView
+                android:id="@+id/listView_NewInventory_ListProds"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_InventoryParts"
+        android:layout_width="78dp"
+        android:layout_height="76dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_dialog_dialer"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="6dp" />
+
+</RelativeLayout>

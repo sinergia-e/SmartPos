@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.SalesListActivity">
+
+    <LinearLayout
+        android:id="@+id/SalesList_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/SalesLis_SyncSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/transparente"
+                app:srcCompat="@mipmap/ic_sync_prods" />
+
+            <Spinner
+                android:id="@+id/SalesList_StatusSp"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/SalesList_FilterStatus"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/transparente"
+                app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/SalesList_SalesResume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/SalesList_FilterCorte"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/transparente"
+                app:srcCompat="@android:drawable/arrow_down_float" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/SalesList_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/SalesList_Fb_NewCorte"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/SalesList_list"
+        android:layout_alignEnd="@+id/SalesList_list"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        app:elevation="20dp"
+        app:fabSize="normal"
+        app:srcCompat="?attr/actionModeCutDrawable" />
+</RelativeLayout>

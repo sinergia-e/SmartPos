@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="intem.smartpos">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Smart Pos"
+        android:networkSecurityConfig="@xml/networksecurityconfig"
+        android:roundIcon="@drawable/smart_pos_color"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <activity
+            android:name="intem.smartpos.activities.ConnectionsActivity"
+            android:label="@string/title_activity_connections"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="intem.smartpos.activities.MainActivity" />
+
+
+        <activity
+            android:name="intem.smartpos.activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+
+        <activity
+            android:name="intem.smartpos.activities.NewOrderActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <!-- Esta linea evita que se despliegue el teclado al entrar -->
+
+
+        <activity android:name="intem.smartpos.activities.UsersActivity" />
+        <activity android:name="intem.smartpos.activities.BarScanner" /> <!-- Linea para invocar el scanner -->
+        <activity
+            android:name="intem.smartpos.activities.MenuActivity"
+            android:label="Menu SmartPos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="intem.smartpos.activities.EditUserActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="intem.smartpos.activities.NewProdActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="intem.smartpos.activities.ListProdsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="intem.smartpos.activities.ClientsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="intem.smartpos.activities.Edit_PartOrder_Activity" />
+        <activity
+            android:name="intem.smartpos.activities.OrdersListActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="intem.smartpos.activities.SendOrderActivity" />
+        <activity
+            android:name="intem.smartpos.activities.AppConfigActivity"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="intem.smartpos.activities.NewInventoryMovsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name="intem.smartpos.activities.MovsInvListActivity" />
+        <activity android:name="intem.smartpos.activities.Edit_CountPart_Activity" />
+        <activity android:name="intem.smartpos.activities.ProdsDetailActivity" />
+        <activity android:name="intem.smartpos.activities.EditProdActivity" />
+        <activity android:name="intem.smartpos.activities.CreditActivity" />
+        <activity android:name="intem.smartpos.activities.ClientDetActivity" />
+        <activity android:name="intem.smartpos.activities.PaymentsActivity" />
+        <activity android:name="intem.smartpos.activities.ConfirmCountActivity" />
+        <activity
+            android:name="intem.smartpos.activities.PosActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name="intem.smartpos.activities.Reports_Activity" />
+        <activity
+            android:name="intem.smartpos.activities.ProdsReportsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="intem.smartpos.Reports.ProdsReport_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity android:name="intem.smartpos.Reports.ProdsReportFilter_Activity" />
+
+        <activity android:name="intem.smartpos.activities.Rest_NewComandActivity" />
+
+        <activity
+            android:name="intem.smartpos.activities.Rest_CaptureCommandActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="intem.smartpos.activities.FinishSaleActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name="intem.smartpos.activities.SalesListActivity" />
+        <activity android:name="intem.smartpos.activities.for_test" />
+        <activity
+            android:name="intem.smartpos.activities.welcome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="intem.smartpos.activities.Welcome2Activity" />
+        <activity android:name="intem.smartpos.activities.welcome3Activity" />
+
+
+        <activity
+            android:name="intem.smartpos.activities.ProvidersActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="intem.smartpos.activities.PurchasesListActivity" />
+        <activity android:name="intem.smartpos.activities.Purchase_Parts_Activity" />
+        <activity
+            android:name="intem.smartpos.activities.CheckerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="intem.smartpos.activities.CheckerResultActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

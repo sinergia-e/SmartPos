@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.NewProdActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:id="@+id/relativeLayout">
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editTextCode"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="19dp"
+        android:text="Clave de producto"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/editTextCode"
+        android:layout_marginTop="18dp"
+        android:text="Descripcion"
+        android:textColor="@android:color/background_dark" />
+
+    <EditText
+        android:id="@+id/editTextDescrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextCode"
+        android:layout_below="@+id/textView10"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="Precio"
+        android:layout_below="@+id/editTextDescrip"
+        android:layout_alignStart="@+id/textView10" />
+
+    <Button
+        android:id="@+id/buttonNewProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa nuevo producto"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginBottom="109dp" />
+
+    <Switch
+        android:id="@+id/switchTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IVA "
+        android:layout_alignTop="@+id/buttonNewProd"
+        android:layout_alignEnd="@+id/relativeLayout" />
+
+    <EditText
+        android:id="@+id/editTextPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_below="@+id/textView11"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

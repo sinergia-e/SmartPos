@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.MovsInvListActivity">
+
+    <LinearLayout
+        android:id="@+id/principal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner_MovsInv_Status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.97"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog"
+                android:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/imageButton_MovsInv_FilterByStatus"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="#00ffffff"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listView_MovsInv_Movs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton_MovsInvList_AddMov"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/principal"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_margin="15dp"
+        android:clickable="true"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="normal"
+        app:srcCompat="@mipmap/ic_add" />
+
+</RelativeLayout>

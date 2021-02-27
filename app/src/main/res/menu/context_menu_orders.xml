@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/OpenOrder"
+        android:title="Abre para editar"></item>
+
+    <item
+        android:id="@+id/DeleteOrder"
+        android:title="Borrar Pedido"></item>
+
+    <item
+        android:title="Enviar por correo "
+        android:id="@+id/SendMail"></item>
+
+    <item
+        android:title="Imprime el pedido"
+        android:id="@+id/PrintOrder"></item>
+
+</menu>

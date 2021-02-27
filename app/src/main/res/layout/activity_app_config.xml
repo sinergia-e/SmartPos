@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="intem.mybusinessmobile.intem.smartpos.activities.AppConfigActivity"
+    android:weightSum="1"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="9dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_blue_degree"
+                    android:text="Configuracion General"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+
+
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre de la empresa"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/eT_AppConfig_Enterprise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textAdressComp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Direccion de la empresa"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/eT_AppConfig_CompanyAdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+
+
+            <TextView
+                android:id="@+id/textPhoneCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefono de la empresa"
+                android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/eT_AppConfig_PhoneCompany"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+
+
+
+
+
+
+
+            <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ID de la terminal "
+                    android:textColor="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/eT_AppConfig_Terminal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="text|textPersonName"
+                android:maxLength="6"
+                android:singleLine="false" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cantidad de datos a importar x paquete"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/eT_AppConfig_DataSizeProds"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Servidor para conexion"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/eT_AppConfig_ServerIp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Correo para envio de pedidos"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/eT_AppConfig_MailOrders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Almacen del cual se toma la mercancia"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/eT_AppConfig_WareHouse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="1"
+                android:inputType="number" />
+
+
+
+            <Switch
+                android:id="@+id/Switch_AppConfig_DeleteOldData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Al actualizar elimina Datos anteriores (Aplica clientes y productos)"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+
+
+
+
+            <!-- ==================================== Ventas y pedidos ====================================-->
+            <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_blue_degree"
+                    android:text="Ventas y pedidos"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vendedor (Se importan los clientes de este vendedor,dejar en blanco si los requieres todos)"
+                    android:textColor="@color/colorPrimary" />
+
+                <EditText
+                    android:id="@+id/eT_AppConfig_Seller"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:layout_marginBottom="20dp"/>
+
+            <Switch
+                android:id="@+id/switchPriceQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Precios por volumen de compra "
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+            <Switch
+                android:id="@+id/switchOnlyUpdateCl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Solo recuperta clientes nuevos o actualizaciones "
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+
+            <Switch
+                android:id="@+id/switchPendingSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sincroniza ventas como pendientes"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+
+            <Switch
+                android:id="@+id/switchPresentations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usa Presentaciones (Habilitado tiene prioridad)"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+
+            <Switch
+                android:id="@+id/switchPrintTkSale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imprimir Tk en Venta"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+            <Switch
+                android:id="@+id/switchPrintTkOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Imprimir Tk en Pedidos"
+                android:textAlignment="textEnd"
+                android:textSize="18sp"
+                android:layout_margin="15dp"/>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_blue_degree"
+                    android:text="Inventario"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <Switch
+                    android:id="@+id/switchOnlyExist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Solo productos con existencia  "
+                    android:textAlignment="textEnd"
+                    android:textSize="18sp" />
+
+
+
+            <Switch
+                android:id="@+id/switchOnlyUpdatePr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Solo recuperta productos nuevos o actualizaciones "
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+
+            <Switch
+                android:id="@+id/switch_AppConfig_SucEx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recupera existencia de sucursales (Requiere modulo de existencias remotas en concentrador)"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_AppConfig_SendProdsServer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Sincroniza productos al servidor"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/switch_SendSaleRemision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:text="Enviar venta cerrada como remision"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+            <Switch
+                android:id="@+id/Switch_AppConfig_InvInstant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Inventario Fisico en tiempo Real"
+                android:textAlignment="textEnd"
+                android:textSize="18sp" />
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+            <Button
+                    android:id="@+id/bt_AppConfig_Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/positive_button_background"
+                    android:text="Guardar"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:layout_marginBottom="50dp"/>
+
+            <Button
+                android:id="@+id/DropDB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/alert_buttons_background"
+                android:text="Elimina la base de datos"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:layout_marginBottom="35dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout >
